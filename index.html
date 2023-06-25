@@ -15,20 +15,45 @@
 <body>
 
   <main>
-    <h1>We're coming soon</h1>
+    <div class="main__content">
+      <!-- <div class="content__bg">
+        <img src="./images/bg-pattern-desktop.svg" alt="">
+      </div> -->
+      <div class="main__content--text">
+        <img class="main__content--text--logo" src="./images/logo.svg" alt="">
 
-    <p>Hello fellow shoppers! We're currently building our new fashion store.
-      Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <h1><span class="main__content--text--h spanFirst">We're</span> <span
+            class="main__content--text--h spanSecond">coming soon</span></h1>
 
-    Email Address
+        <p>Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+        <div class="content__form" onclick="mensagemDeAlerta()">
+          <label for="email">
+            <input type="email" id="email" name="email" id="emailInput" onblur="validacaoEmail(email)"  placeholder="Email Address">
+            <button type="submit" id="emailSubmit"><img src="./images/icon-arrow.svg" alt=""> </button>
+          </label>
+        </div>
+        <div class="content__form--alert">
+          <p>Please, don't submit any personal information. This was made for studies purpose only!</p>
+        </div>
+      </div>
+      <div class="content__image">
+        <picture>
+          <source media="(max-width: 800px)" srcset="./images/hero-mobile.jpg">
+          <source media="(min-width: 801px)" srcset="./images/hero-desktop.jpg">
+          <img src="./images/hero-desktop.jpg" alt="Woman in a peach color shirt image">
+        </picture>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Code <a href="https://github.com/Lia-Moon/Base-apparel-coming-soon" target="_blank">Github</a>
+        . Coded by <a href="https://juliavieira.xyz/" target="_blank">Júlia Vieira</a>.
+      </p>
+    </footer>
   </main>
-
-  <footer>
-    <p class="attribution">
-      Code <a href="https://github.com/Lia-Moon/Base-apparel-coming-soon" target="_blank">Github</a>
-      . Coded by <a href="https://juliavieira.xyz/" target="_blank">Júlia Vieira</a>.
-    </p>
-  </footer>
 </body>
+<script src="./js/script.js"></script>
 
 </html>

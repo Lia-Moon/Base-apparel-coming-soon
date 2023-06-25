@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
-/* font-family: 'Josefin Sans', sans-serif;     Weights: 300, 400, 600 */
+/* font-family: 'Josefin Sans', sans-serif;     Weights: 300, 400, 600 
+
+    ### Gradients    
+    - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+    - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+*/
+
+:root {
+    /* ### Primary */
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);    
+    /* ### Neutral */    
+    --dark-grayish-red: hsl(0, 6%, 24%);
+}
 
 body, html {
     font-size: 16px;
@@ -8,11 +21,109 @@ body, html {
     font-weight: 300;
 }
 
+.main__content {
+    display: flex;
+    z-index: 5;
+}
+
+.main__content--text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 130px;
+    gap: 2rem;
+}
+
+.main__content--text--logo {
+    width: 170px;
+    margin-bottom: 100px;
+}
+
+.main__content--text h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    line-height: 60px;
+}
+
+.main__content--text--h.spanFirst { /* WE'RE */
+    color: var(--desaturated-red);
+}
+
+.main__content--text--h.spanSecond { /* COMING SOON */
+    font-weight: 300;
+    color: var(--dark-grayish-red);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.main__content--text p {
+    color: var(--desaturated-red);
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.content__form label input {
+    padding: 15px 280px 15px 15px;
+    border-radius: 40px;
+    border: 1px solid var(--desaturated-red);
+}
+
+.content__form label input:focus {
+    outline: none;
+}
+
+.content__form label button {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 12px 40px 12px 40px;
+    border-radius: 40px;
+    position: relative;
+    left: 375px;
+    bottom: 46.5px;
+    border: none;
+}
+
+.content__form label button:hover {
+    cursor: pointer;
+}
+
+.content__form--alert {
+    display: none;
+    position: relative;
+    z-index: 6;
+    bottom: 75px;
+    background-color: var(--desaturated-red);
+    width: 70%;
+    padding: 10px;
+    align-self: center;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.content__form--alert p {
+    color: var(--dark-grayish-red);
+}
+
+.content__form--alert.display {
+    display: block;
+}
+
+.footer {
+    z-index: 1;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: var(--desaturated-red);
+    font-weight: 400;
+    position: fixed;
+    width: 50%;
+    left: 0;
+    bottom: 5px;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--desaturated-red);
 }
