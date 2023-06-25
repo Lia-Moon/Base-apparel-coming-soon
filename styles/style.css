@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+/* font-family: 'Josefin Sans', sans-serif;     Weights: 300, 400, 600 */
+
+body, html {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
