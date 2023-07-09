@@ -88,12 +88,16 @@ body, html {
     cursor: pointer;
 }
 
+.content__form label button:hover + .content__form--alert{
+    display: block;
+}
+
 .content__form--alert {
     display: none;
     position: relative;
     z-index: 6;
-    bottom: 75px;
-    background-color: var(--desaturated-red);
+    bottom: 35px;
+    background: linear-gradient(135deg, hsl(0, 69%, 91%), hsl(0, 80%, 86%));
     width: 70%;
     padding: 10px;
     align-self: center;

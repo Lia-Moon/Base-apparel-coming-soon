@@ -28,14 +28,14 @@
         <p>Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-        <div class="content__form" onclick="mensagemDeAlerta()">
+        <div class="content__form">
           <label for="email">
             <input type="email" id="email" name="email" id="emailInput" onblur="validacaoEmail(email)"  placeholder="Email Address">
             <button type="submit" id="emailSubmit"><img src="./images/icon-arrow.svg" alt=""> </button>
+            <div class="content__form--alert">
+              <p>Please, don't submit any personal information. This was made for studies purpose only!</p>
+            </div>
           </label>
-        </div>
-        <div class="content__form--alert">
-          <p>Please, don't submit any personal information. This was made for studies purpose only!</p>
         </div>
       </div>
       <div class="content__image">
